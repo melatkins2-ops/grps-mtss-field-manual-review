@@ -2820,7 +2820,6 @@ body.v79-modal-open{overflow:hidden!important}
   .v79-scroll{padding:8px}
 }
 </style>
-
 <style>
 /* V80 blank-control fix and framework action refinement */
 #grps-framework-v40 .v40-frameworkhead{
@@ -2862,7 +2861,31 @@ body.v79-modal-open{overflow:hidden!important}
   .v80-framework-enlarge{margin-top:12px!important;width:100%!important;justify-content:center!important}
 }
 </style>
-</head><!-- GRPS MTSS Field Manual design candidate v80: functional/usability QA complete -->
+
+<style>
+/* V81 framework header cleanup */
+#grps-framework-v40 .v40-frameworkhead{
+  display:flex!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  gap:18px!important;
+}
+#grps-framework-v40 .v40-frameworkhead > a{
+  display:none!important;
+}
+#grps-framework-v40 .v80-framework-enlarge{
+  margin-left:auto!important;
+}
+@media(max-width:760px){
+  #grps-framework-v40 .v40-frameworkhead{
+    display:block!important;
+  }
+  #grps-framework-v40 .v80-framework-enlarge{
+    margin:12px 0 0!important;
+  }
+}
+</style>
+</head><!-- GRPS MTSS Field Manual design candidate v81: functional/usability QA complete -->
 <body>
 <div class="v50-focusbar" id="v50focusbar">
 <div class="v6-shell">
@@ -3108,7 +3131,7 @@ body.v79-modal-open{overflow:hidden!important}
 <div class="v4-kicker">GRPS MTSS Framework</div>
 <h2>One system. Four connected domains. Every scholar. Every day.</h2>
 </div>
-<a href="#system-map-v22">Explore the system →</a>
+
 <button aria-label="Click to enlarge the GRPS MTSS Framework" class="v80-framework-enlarge" onclick="v79OpenFramework()" type="button">
 <span aria-hidden="true">⤢</span> Click to Enlarge Framework
         </button></div>

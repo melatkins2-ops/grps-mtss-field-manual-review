@@ -442,14 +442,11 @@ button,a,select,input,textarea{font-size:inherit}
 <style>
 .finder-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.finder-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.intervention-card{border:1px solid #dbe3e8;border-radius:10px;padding:18px;background:#fff}.intervention-card h4{margin:6px 0;color:var(--blue)}.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.chip{font-size:.72rem;background:#eef4f8;color:var(--blue);padding:5px 8px;border-radius:14px;font-weight:800}.role-paths{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.role-path{border-top:6px solid var(--orange);background:#fff;border-radius:8px;padding:18px;box-shadow:0 5px 18px #17304412}.role-path h3{color:var(--blue);margin-top:0}.decision-matrix{width:100%;border-collapse:collapse;margin-top:18px}.decision-matrix th,.decision-matrix td{border:1px solid #dbe3e8;padding:11px;vertical-align:top}.decision-matrix th{background:#eef4f8;color:var(--blue);text-align:left}.example{border:1px solid #cfe0ea;border-radius:10px;padding:20px;background:#fbfdff}.printbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.small{font-size:.88rem;color:#60707c}.tier-rule{border-left:5px solid var(--orange);padding:14px;background:#fff7ef;margin:12px 0}.priority-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.priority-card{border:1px solid #dbe3e8;border-radius:8px;padding:16px}.priority-card strong{color:var(--blue)}@media(max-width:900px){.finder-controls,.role-paths,.priority-grid{grid-template-columns:1fr 1fr}}@media(max-width:650px){.finder-controls,.role-paths,.priority-grid{grid-template-columns:1fr}}@media print{header,.hero,.nav,.chooser,.rolebar,.footer,.printbar{display:none!important}.wrap{padding:12px 0;max-width:none}.panel{display:block!important;border:0}.decision-card{break-inside:avoid}}
 </style>
-<style>
-/* V16 cleanup: retire duplicate legacy resource finder while preserving expanded library */
-#resource-finder-v5{display:none !important}
-#resource-readiness-v4{display:none !important}
+<style>/* V83: resource finder restored; legacy readiness page remains retired */
+#resource-readiness-v4{display:none!important}
 </style>
-<style>
-/* V21 duplicate-content retirement */
-#resource-finder-v5,#resource-readiness-v4{display:none!important}
+<style>/* V83: keep only the obsolete readiness page retired */
+#resource-readiness-v4{display:none!important}
 </style>
 <style>
 .v22-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.v22-card{display:block;background:#fff;border:1px solid #dfe5e9;border-radius:14px;padding:16px;text-decoration:none;color:#24313a;min-height:145px}.v22-card:hover{box-shadow:0 5px 16px rgba(0,0,0,.08)}.v22-card h3{color:#005596;margin:0 0 6px!important}.v22-card p{font-size:.91rem}.v22-type span{display:inline-block;font-size:.7rem;font-weight:800;border-radius:999px;padding:4px 7px;background:#eef5fa;color:#005596;margin:2px}.v22-type .decide{background:#fff3e8;color:#984608}.v22-type .tool{background:#edf7ef;color:#2d6a3d}.v22-flow{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:12px 0 18px}.v22-flow a{background:#005596;color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:.82rem;font-weight:800}.v22-flow b{color:#f47b20}.v22-back{display:inline-block;margin:5px 0 12px;color:#005596;text-decoration:none;font-weight:800;font-size:.84rem}@media(max-width:950px){.v22-map{grid-template-columns:1fr 1fr}}@media(max-width:620px){.v22-map{grid-template-columns:1fr}}
@@ -2894,7 +2891,65 @@ body.v79-modal-open{overflow:hidden!important}
   padding-bottom:14px!important;
 }
 </style>
-</head><!-- GRPS MTSS Field Manual design candidate v82: functional/usability QA complete -->
+
+<style>
+/* V83 mobile Resource Finder repair */
+#resource-finder-v5.v50-active-section{
+  display:block!important;
+}
+#resource-finder-v5 .v71-pathshell{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+#resource-finder-v5 .v71-toolgrid{
+  display:grid!important;
+}
+@media(max-width:650px){
+  #resource-finder-v5 .v71-pathshell{
+    padding:20px 14px 88px!important;
+  }
+  #resource-finder-v5 .v71-pathhead{
+    margin-bottom:14px!important;
+  }
+  #resource-finder-v5 .v71-pathhead h2{
+    font-size:1.65rem!important;
+    line-height:1.08!important;
+  }
+  #resource-finder-v5 .v71-pathhead p{
+    font-size:.88rem!important;
+    margin-top:8px!important;
+  }
+  #resource-finder-v5 .v71-toolgrid{
+    grid-template-columns:1fr!important;
+    border-left:0!important;
+    border-top:0!important;
+    gap:10px!important;
+  }
+  #resource-finder-v5 .v71-toolgrid a{
+    display:block!important;
+    min-height:0!important;
+    padding:16px!important;
+    border:1px solid #d9e2e8!important;
+    border-radius:10px!important;
+    background:#fff!important;
+  }
+  #resource-finder-v5 .v71-toolgrid h3{
+    font-size:1rem!important;
+  }
+
+  /* Keep the primary navigation usable on a phone without covering content. */
+  nav.v23-quick .v6-shell{
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+  }
+  nav.v23-quick .v6-shell > a{
+    scroll-snap-align:start;
+  }
+}
+</style>
+</head><!-- GRPS MTSS Field Manual design candidate v83: functional/usability QA complete -->
 <body>
 <div class="v50-focusbar" id="v50focusbar">
 <div class="v6-shell">

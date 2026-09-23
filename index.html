@@ -3031,6 +3031,22 @@ body:has(#quick-start-v35.v50-active-section) nav.v23-quick{display:none!importa
  .v31-planprogress{overflow-x:auto;-webkit-overflow-scrolling:touch}
  .v42-manual-content table{max-width:100%}
 }
+</style><style>
+/* V88: dedicated, readable MTSS orientation route */
+.v88-learn{background:#f7fafe;color:#16354f;min-height:70vh;padding:24px 0 80px}
+.v88-learn .v6-shell{max-width:1100px;margin:auto;padding:0 24px}
+.v88-learn-nav{display:flex;flex-wrap:wrap;gap:12px;align-items:center;border-bottom:1px solid #d7e4ee;padding:10px 0 18px;margin-bottom:30px}
+.v88-learn-nav a,.v88-learn-nav button{font:inherit;font-size:1rem;font-weight:700;color:#005596;background:white;border:1px solid #cadce8;border-radius:8px;padding:11px 16px;text-decoration:none;cursor:pointer}
+.v88-learn-nav a:last-child{margin-left:auto}
+.v88-learn-head span{font-weight:800;letter-spacing:.1em;color:#d55d0a;font-size:.85rem}
+.v88-learn-head h1{font-size:clamp(2rem,4vw,3.25rem);line-height:1.13;margin:10px 0 16px;color:#102f51}
+.v88-learn-head p{font-size:1.15rem;line-height:1.6;max-width:860px;margin:0 0 28px}
+.v88-learn-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.v88-learn-steps>div{background:white;border:1px solid #d6e2ed;border-top:5px solid #005596;border-radius:9px;padding:22px}
+.v88-learn-steps strong{font-size:1.18rem;color:#102f51}.v88-learn-steps p{font-size:1rem;line-height:1.55;margin:12px 0 0}
+.v88-learn-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}.v88-learn-actions a{display:inline-block;padding:13px 17px;border-radius:8px;background:#005596;color:white;text-decoration:none;font-weight:700;font-size:1rem}
+.v88-learn-more{background:#edf5fb;padding:20px 24px;border-left:5px solid #f47b20;border-radius:7px}.v88-learn-more h2{font-size:1.4rem;margin:0 0 8px}.v88-learn-more p{font-size:1rem;line-height:1.55}.v88-learn-more a{font-weight:700;color:#005596}
+@media(max-width:760px){.v88-learn{padding-top:10px}.v88-learn .v6-shell{padding:0 16px}.v88-learn-steps{grid-template-columns:1fr}.v88-learn-nav a:last-child{margin-left:0}.v88-learn-actions{flex-direction:column}.v88-learn-actions a{text-align:center}}
 </style></head><!-- GRPS MTSS Field Manual design candidate v84: functional/usability QA complete -->
 <body>
 <div class="v50-focusbar" id="v50focusbar">
@@ -3063,7 +3079,7 @@ body:has(#quick-start-v35.v50-active-section) nav.v23-quick{display:none!importa
 <a class="v85-action" href="#resource-finder-v5"><span class="v85-num">03</span><span class="v85-actioncopy"><strong>Find a tool or resource</strong><small>Go directly to supports, templates, and guidance.</small></span><span aria-hidden="true" class="v85-arrow">→</span></a>
 </nav>
 <section aria-label="Quick access" class="v85-shortcuts"><h2>Quick access</h2><div class="v85-shortcutlinks"><a href="#working-tools-v14">Build or review a plan <span aria-hidden="true">↗</span></a><a href="#meeting-quality-v4">Run an MTSS meeting <span aria-hidden="true">↗</span></a><a href="#academic-mtss-v20">Academic Support Finder <span aria-hidden="true">↗</span></a></div></section>
-<div class="v85-learn"><span>New to MTSS?</span><a href="#what-is-mtss-v41">Learn how MTSS works →</a><a href="#grps-framework-v40">View the framework →</a></div>
+<div class="v85-learn"><span>New to MTSS?</span><a href="#learn-mtss-v88">Learn how MTSS works →</a><a href="#grps-framework-v40">View the framework →</a></div>
 </div>
 </section>
 <section class="v42-homekeep v42-whatstrip" id="what-is-mtss-v41">
@@ -3159,7 +3175,18 @@ body:has(#quick-start-v35.v50-active-section) nav.v23-quick{display:none!importa
 </section>
 <section class="v42-manual-content wrap" id="meetingrecord"><div aria-label="MTSS page navigation" class="v65-pagebar" role="navigation"><a class="v65-home" href="#start">⌂  MTSS Home</a><a class="v65-map" href="#system-map-v22">System Map →</a></div><div class="eyebrow" style="color:#f47b20">MEETING DECISION RECORD</div><h2 class="section-title">Leave every MTSS meeting with one documented decision</h2><div class="formgrid"><div class="full"><label for="rProblem">Problem statement</label><textarea id="rProblem" placeholder="Describe the observable, measurable need or pattern and context."></textarea></div><div><label for="rDomain">Primary domain</label><select id="rDomain"><option>Academics</option><option>Attendance</option><option>Behavior / PBIS</option><option>SEL / Mental Health</option></select></div><div><label for="rDecision">Decision</label><select id="rDecision"><option>Start targeted support</option><option>Continue current plan</option><option>Adjust / intensify</option><option>Repair implementation fidelity</option><option>Fade / exit</option><option>Conduct deeper problem analysis</option></select></div><div class="full"><label for="rEvidence">Evidence considered</label><textarea id="rEvidence"></textarea></div><div class="full"><label for="rPlan">Plan / intervention</label><textarea id="rPlan"></textarea></div><div><label for="rOwner">Owner</label><input id="rOwner"/></div><div><label for="rDate">Review date</label><input id="rDate" type="date"/></div><div class="full"><label for="rRule">Progress measure + decision rule</label><textarea id="rRule"></textarea></div></div><div class="printbar"><button class="btn secondary" onclick="buildRecord()">Generate decision record</button><button class="btn primary" onclick="window.print()" style="background:#005596;color:#fff">Print / Save as PDF</button></div><div aria-live="polite" id="recordOut"></div></section>
 </main>
-<section aria-label="GRPS MTSS Framework" class="v42-manual-content v40-framework" id="grps-framework-v40"><div aria-label="MTSS page navigation" class="v65-pagebar" role="navigation"><a class="v65-home" href="#start">⌂  MTSS Home</a><button aria-label="Go back to previous page" class="v78-back" onclick="history.back()" type="button">← Back</button><a class="v65-map" href="#system-map-v22">System Map →</a></div>
+<section class="v42-manual-content v88-learn" id="learn-mtss-v88">
+<div class="v6-shell">
+<nav aria-label="MTSS learning page navigation" class="v88-learn-nav"><a href="#start">← Home</a><button onclick="v50Back()" type="button">← Back</button><a href="#grps-framework-v40">View Framework →</a></nav>
+<header class="v88-learn-head"><span>MTSS ORIENTATION</span><h1>How MTSS works</h1><p>MTSS is one connected system for academics, attendance, behavior/PBIS, and SEL/mental health. Begin with strong Tier 1 supports, use evidence to identify needs, and match additional support when needed.</p></header>
+<div aria-label="MTSS problem-solving process" class="v88-learn-steps">
+<div><strong>1. Define the need</strong><p>Identify the scholar, group, or system pattern using multiple sources of evidence.</p></div>
+<div><strong>2. Match and implement support</strong><p>Choose a response aligned to the need, assign ownership, and define dosage and implementation expectations.</p></div>
+<div><strong>3. Monitor and decide</strong><p>Review progress, fidelity, and access. Continue, adjust, intensify, or fade support based on evidence.</p></div>
+</div>
+<div class="v88-learn-actions"><a href="#grps-framework-v40">Explore the inverted tier framework →</a><a href="#concern-school-v24">Find the right support →</a><a href="#working-tools-v14">Build or review a plan →</a></div>
+<div class="v88-learn-more"><h2>Five essential components</h2><p>Use the Michigan MTSS guidance and the GRPS framework for the system components, connected domains, and roles that make the process work.</p><a href="https://mimtsstac.org/mtss-practice-profile" rel="noopener noreferrer" target="_blank">Michigan MTSS Practice Profile ↗</a></div>
+</div></section><section aria-label="GRPS MTSS Framework" class="v42-manual-content v40-framework" id="grps-framework-v40"><div aria-label="MTSS page navigation" class="v65-pagebar" role="navigation"><a class="v65-home" href="#start">⌂  MTSS Home</a><button aria-label="Go back to previous page" class="v78-back" onclick="history.back()" type="button">← Back</button><a class="v65-map" href="#system-map-v22">System Map →</a></div>
 <div class="v6-shell">
 <div class="v40-frameworkhead">
 <div>

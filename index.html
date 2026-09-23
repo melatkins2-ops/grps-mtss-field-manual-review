@@ -2949,6 +2949,20 @@ body.v79-modal-open{overflow:hidden!important}
 </style>
 <style>
 .v84-k5local{margin:18px 0 22px;border:1px solid #d7e2e8;border-radius:14px;background:#fff;overflow:hidden}.v84-localhead{padding:16px 18px;background:linear-gradient(90deg,#eef6fb,#fff8f1);border-bottom:1px solid #dce5ea}.v84-localhead span{color:#f47b20;font-size:.62rem;font-weight:900;letter-spacing:.1em}.v84-localhead h3{margin:5px 0 4px;color:#082f54;font-size:1.05rem}.v84-localhead p{margin:0;color:#60717c;font-size:.72rem;line-height:1.45;max-width:900px}.v84-subjects{display:grid;grid-template-columns:1fr 1fr}.v84-subject{padding:16px 18px}.v84-subject+.v84-subject{border-left:1px solid #e1e8ec}.v84-subjecttitle{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.v84-subjecttitle b{color:#082f54;font-size:.88rem}.v84-subjecttitle span{font-size:.62rem;font-weight:900;color:#637681}.v84-flow{display:grid;gap:7px}.v84-flow>div{padding:9px 10px;border-radius:8px;background:#f8fafb;border-left:4px solid #005596}.v84-subject.math .v84-flow>div{border-left-color:#f47b20}.v84-flow i{display:block;color:#667985;font-style:normal;font-size:.55rem;font-weight:900;letter-spacing:.08em}.v84-flow strong{display:block;color:#173044;font-size:.72rem;margin:2px 0}.v84-flow small{display:block;color:#687780;font-size:.62rem;line-height:1.4}.v84-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.v84-links a{font-size:.61rem;font-weight:900;color:#005596;text-decoration:none;padding:6px 7px;border:1px solid #d7e2e8;border-radius:6px;background:#fff}.v84-links a:hover{background:#eef6fa}.v84-mathnote{margin-top:10px;padding:8px 10px;background:#fff7ef;border:1px solid #f1dcc9;border-radius:8px;color:#66584e;font-size:.63rem;line-height:1.4}.v84-rule{padding:11px 18px;border-top:1px solid #e1e8ec;background:#f7f9fb;color:#596b76;font-size:.68rem;line-height:1.45}.v84-rule b{color:#082f54}.v84-sourcebadge{margin:5px 0 7px;color:#005596;font-size:.57rem;font-weight:900}@media(max-width:800px){.v84-subjects{grid-template-columns:1fr}.v84-subject+.v84-subject{border-left:0;border-top:1px solid #e1e8ec}.v84-subjecttitle{align-items:flex-start}}
+</style><style>
+/* v85: task-first, mobile-first landing page */
+#quick-start-v35{background:#f6f9fc!important;min-height:calc(100vh - 150px)!important;padding:0!important}
+.v85-home{max-width:1040px;margin:0 auto;padding:clamp(22px,4vw,48px) 22px 42px;font-family:inherit}
+.v85-intro{margin-bottom:25px}.v85-kicker{font-size:.69rem;font-weight:900;letter-spacing:.12em;color:#bd5913;margin-bottom:9px}.v85-intro h1{font-size:clamp(1.9rem,4vw,3rem)!important;line-height:1.12!important;letter-spacing:-.025em;color:#102f51;margin:0 0 9px!important}.v85-intro p{font-size:clamp(.98rem,1.7vw,1.14rem);color:#506679;margin:0;line-height:1.5}
+.v85-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:0 0 27px}
+.v85-action{display:flex;flex-direction:column;align-items:flex-start;position:relative;gap:14px;padding:24px 21px 20px;min-height:196px;background:#fff;border:1px solid #d3e0e9;border-top:5px solid #005596;border-radius:11px;text-decoration:none!important;box-shadow:0 3px 11px rgba(10,52,82,.035);color:#173044!important;transition:box-shadow .15s,border-color .15s,transform .15s}
+.v85-action:nth-child(2){border-top-color:#087e91}.v85-action:nth-child(3){border-top-color:#f47b20}.v85-action:hover,.v85-action:focus-visible{border-color:#005596;box-shadow:0 7px 20px rgba(0,62,105,.13);transform:translateY(-2px)}
+.v85-num{font-size:.74rem;font-weight:900;color:#005596;letter-spacing:.08em}.v85-action:nth-child(2) .v85-num{color:#087e91}.v85-action:nth-child(3) .v85-num{color:#bd5913}.v85-actioncopy{display:flex;flex-direction:column;gap:7px;padding-right:8px}.v85-actioncopy strong{font-size:1.2rem;line-height:1.24;color:#102f51}.v85-actioncopy small{font-size:.87rem;line-height:1.43;color:#516779}.v85-arrow{position:absolute;right:18px;bottom:15px;font-size:1.35rem;font-weight:800;color:#005596}
+.v85-shortcuts{padding:18px 20px;background:#eaf3f9;border:1px solid #d7e7f1;border-radius:10px;margin-bottom:17px}.v85-shortcuts h2{font-size:.83rem!important;text-transform:uppercase;letter-spacing:.09em;color:#234866;margin:0 0 11px!important}.v85-shortcutlinks{display:flex;flex-wrap:wrap;gap:9px}.v85-shortcutlinks a{display:inline-flex;align-items:center;justify-content:space-between;gap:15px;background:#fff;border:1px solid #c9dce9;border-radius:7px;padding:11px 13px;color:#005596!important;font-size:.91rem;font-weight:800;text-decoration:none!important}.v85-shortcutlinks a:hover,.v85-shortcutlinks a:focus-visible{background:#005596;color:#fff!important}.v85-learn{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:.87rem;color:#566e80}.v85-learn a{color:#005596!important;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+/* On the homepage, the page's task navigation is the primary navigation; hide duplicate global tab strip. */
+body:has(#quick-start-v35.v50-active-section) nav.v23-quick{display:none!important}
+@media(max-width:760px){.v85-home{padding:25px 16px 35px}.v85-intro{margin-bottom:21px}.v85-actions{grid-template-columns:1fr;gap:10px;margin-bottom:22px}.v85-action{min-height:0;flex-direction:row;align-items:center;gap:14px;padding:17px 42px 17px 14px;border-top:1px solid #d3e0e9;border-left:5px solid #005596}.v85-action:nth-child(2){border-left-color:#087e91}.v85-action:nth-child(3){border-left-color:#f47b20}.v85-num{align-self:flex-start;margin-top:2px}.v85-actioncopy strong{font-size:1.04rem}.v85-actioncopy small{font-size:.84rem}.v85-arrow{right:12px;bottom:auto;top:50%;transform:translateY(-50%)}.v85-shortcuts{padding:15px}.v85-shortcutlinks{display:grid;grid-template-columns:1fr;gap:7px}.v85-shortcutlinks a{width:100%}.v85-learn{gap:8px 14px}}
+@media(prefers-reduced-motion:reduce){.v85-action{transition:none}.v85-action:hover{transform:none}}
 </style></head><!-- GRPS MTSS Field Manual design candidate v84: functional/usability QA complete -->
 <body>
 <div class="v50-focusbar" id="v50focusbar">
@@ -2973,126 +2987,15 @@ body.v79-modal-open{overflow:hidden!important}
 </div></nav>
 <section class="v6-hero v42-homekeep v71-retired-home" id="home"><div aria-hidden="true" class="v71-homeanchor"></div></section>
 <section class="v42-homekeep v45-landing" id="quick-start-v35">
-<div class="v74-home">
-<div aria-hidden="true" class="v74-topband">
-<span></span><span></span><span></span><span></span>
-</div>
-<section class="v74-hero">
-<div class="v74-herocopy">
-<div class="v74-eyebrow">GRAND RAPIDS PUBLIC SCHOOLS</div>
-<h1>MTSS Field Manual</h1>
-<p>Use the manual to move from a need to a clear action—without having to figure out the system first.</p>
-<div class="v74-heroactions">
-<a class="primary" href="#concern-school-v24">Start guided support</a>
-<a href="#resource-finder-v5">Find a tool or resource</a>
-</div>
-</div>
-<div class="v74-heroside">
-<div class="v74-sidequote">
-<span class="v74-dot"></span>
-<div>
-<b>One system. Four connected domains.</b>
-<p>Academics · Attendance · Behavior/PBIS · SEL/Mental Health</p>
-</div>
-</div>
-<div class="v74-sidemetric">
-<span>THE GOAL</span>
-<b>Right support.<br/>Right level.<br/>Right time.</b>
-</div>
-</div>
-</section>
-<section class="v74-start">
-<div class="v74-sectionhead">
-<div>
-<span>START HERE</span>
-<h2>What are you trying to accomplish?</h2>
-</div>
-<p>Choose the task that best matches what you need to do right now.</p>
-</div>
-<div class="v74-startgrid">
-<a class="v74-startitem blue" href="#concern-school-v24">
-<div class="v74-icon">01</div>
-<div>
-<span>SCHOLAR / GROUP</span>
-<h3>Support a scholar or group</h3>
-<p>Identify the need, scope, people, and next action.</p>
-<b>Start guided pathway →</b>
-</div>
-</a>
-<a class="v74-startitem teal" href="#operating-model-v17">
-<div class="v74-icon">02</div>
-<div>
-<span>TEAM DECISION</span>
-<h3>Determine the right team or action</h3>
-<p>Clarify ownership, evidence, and escalation.</p>
-<b>Find the right team →</b>
-</div>
-</a>
-<a class="v74-startitem orange" href="#resource-finder-v5">
-<div class="v74-icon">03</div>
-<div>
-<span>TOOLS + SUPPORTS</span>
-<h3>Find a support, intervention, or tool</h3>
-<p>Go directly to practical resources and planning tools.</p>
-<b>Open tools + supports →</b>
-</div>
-</a>
-<a class="v74-startitem purple" href="#what-is-mtss-v41">
-<div class="v74-icon">04</div>
-<div>
-<span>LEARN + ORIENT</span>
-<h3>Understand how MTSS works</h3>
-<p>See the framework, process, roles, and examples.</p>
-<b>Explore MTSS →</b>
-</div>
-</a>
-</div>
-</section>
-<section class="v74-mostused">
-<div class="v74-sectionhead compact">
-<div>
-<span>MOST USED</span>
-<h2>Get directly to the work.</h2>
-</div>
-</div>
-<div class="v74-quickgrid">
-<a href="#working-tools-v14"><i>PLAN</i><b>Build or review a plan</b><span>Owner · dosage · evidence · review date</span></a>
-<a href="#meeting-quality-v4"><i>MEET</i><b>Run an MTSS meeting</b><span>Prepare evidence · make one decision</span></a>
-<a href="#academic-mtss-v20"><i>ACADEMIC</i><b>Find an academic support</b><span>Content · grade · skill · need</span></a>
-<a href="#grps-library-v15"><i>WHOLE SCHOLAR</i><b>Find another support</b><span>Attendance · Behavior/PBIS · SEL</span></a>
-</div>
-</section>
-<section class="v74-process">
-<div class="v74-sectionhead">
-<div>
-<span>THE MTSS WORKFLOW</span>
-<h2>Six decisions. One consistent process.</h2>
-</div>
-<a href="#system-map-v22">Open system map →</a>
-</div>
-<div class="v74-processline">
-<a href="#tier1-health-v22"><span>1</span><b>Check the core</b></a>
-<a href="#problem-solving-v10"><span>2</span><b>Define the need</b></a>
-<a href="#resource-finder-v5"><span>3</span><b>Match support</b></a>
-<a href="#working-tools-v14"><span>4</span><b>Plan implementation</b></a>
-<a href="#fidelity-v13"><span>5</span><b>Check fidelity + progress</b></a>
-<a href="#intensification-lab"><span>6</span><b>Review + decide</b></a>
-</div>
-</section>
-<section class="v74-domains">
-<div class="v74-sectionhead compact">
-<div>
-<span>CONNECTED DOMAINS</span>
-<h2>One MTSS system across the whole scholar.</h2>
-</div>
-</div>
-<div class="v74-domainrow">
-<a class="d1" href="#academic-mtss-v20"><b>Academics</b><span>Core instruction · skill support · progress</span></a>
-<a class="d2" href="#grps-library-v15" onclick="window.V34_DOMAIN='Attendance'"><b>Attendance</b><span>Barrier identification · access · engagement</span></a>
-<a class="d3" href="#grps-library-v15" onclick="window.V34_DOMAIN='Behavior'"><b>Behavior / PBIS</b><span>Routines · environment · function · support</span></a>
-<a class="d4" href="#grps-library-v15" onclick="window.V34_DOMAIN='SEL'"><b>SEL / Mental Health</b><span>Belonging · coping · relationships · wellness</span></a>
-</div>
-</section>
+<div aria-label="MTSS Field Manual home" class="v85-home">
+<header class="v85-intro"><div class="v85-kicker">GRPS · MTSS FIELD MANUAL</div><h1>What do you need to do today?</h1><p>Choose one starting point. We’ll guide you to the next step.</p></header>
+<nav aria-label="Choose a starting point" class="v85-actions">
+<a class="v85-action" href="#concern-school-v24"><span class="v85-num">01</span><span class="v85-actioncopy"><strong>Find the right support</strong><small>Start with a scholar, group, or schoolwide need.</small></span><span aria-hidden="true" class="v85-arrow">→</span></a>
+<a class="v85-action" href="#operating-model-v17"><span class="v85-num">02</span><span class="v85-actioncopy"><strong>Decide who should respond</strong><small>Find the right team, role, or next action.</small></span><span aria-hidden="true" class="v85-arrow">→</span></a>
+<a class="v85-action" href="#resource-finder-v5"><span class="v85-num">03</span><span class="v85-actioncopy"><strong>Find a tool or resource</strong><small>Go directly to supports, templates, and guidance.</small></span><span aria-hidden="true" class="v85-arrow">→</span></a>
+</nav>
+<section aria-label="Quick access" class="v85-shortcuts"><h2>Quick access</h2><div class="v85-shortcutlinks"><a href="#working-tools-v14">Build or review a plan <span aria-hidden="true">↗</span></a><a href="#meeting-quality-v4">Run an MTSS meeting <span aria-hidden="true">↗</span></a><a href="#academic-mtss-v20">Academic Support Finder <span aria-hidden="true">↗</span></a></div></section>
+<div class="v85-learn"><span>New to MTSS?</span><a href="#what-is-mtss-v41">Learn how MTSS works →</a><a href="#grps-framework-v40">View the framework →</a></div>
 </div>
 </section>
 <section class="v42-homekeep v42-whatstrip" id="what-is-mtss-v41">

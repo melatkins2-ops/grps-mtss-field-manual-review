@@ -37,8 +37,16 @@
 
   /* ---------------- Router ---------------- */
   const PARENT = { concern: "start", pattern: "start", review: "start" };
+  let current = "";
+  function go(h) {
+    if (window.MTSS_NOHASH) { current = h; route(); } else location.hash = h;
+  }
+  document.addEventListener("click", e => {
+    const a = e.target.closest('a[href^="#/"]');
+    if (a && window.MTSS_NOHASH) { e.preventDefault(); go(a.getAttribute("href")); }
+  });
   function route() {
-    let h = location.hash.replace(/^#\/?/, "");
+    let h = (window.MTSS_NOHASH ? current : location.hash).replace(/^#\/?/, "");
     let [path, qs] = h.split("?");
     let [view, sub] = (path || "start").split("/");
     if (!$(`.view[data-view="${view}"]`)) { view = "start"; sub = ""; }
@@ -86,7 +94,7 @@
     const head = e.target.closest(".srow > button");
     if (head) { const row = head.parentElement; const o = row.classList.toggle("open"); head.setAttribute("aria-expanded", o); return; }
     const add = e.target.closest("[data-addplan]");
-    if (add) { Plan.addSupport(add.dataset.addplan); location.hash = "#/plan"; }
+    if (add) { Plan.addSupport(add.dataset.addplan); go("#/plan"); }
   });
 
   /* ---------------- Guided step helper ---------------- */
@@ -215,7 +223,7 @@
       $("#c-school").addEventListener("change", e => { store.set("school", e.target.value); $("#c-people").innerHTML = people(e.target.value); });
       $("#c-plan").addEventListener("click", () => {
         Plan.prefill({ area: AREA_LABEL[st.area], school: store.get("school", ""), who: st.scope === "group" ? "Small group, grades " + st.grade.replace("-", "–") : "" });
-        location.hash = "#/plan";
+        go("#/plan");
       });
       reveal(out);
     }
@@ -315,7 +323,7 @@
     $("#d-toplan").addEventListener("click", () => {
       const r = read();
       Plan.prefill({ who: r.who, area: r.area, need: r.problem, cause: r.hyp, voice: r.voice, support: r.plan, owner: r.owner, review: r.review, rule: r.rule });
-      location.hash = "#/plan";
+      go("#/plan");
     });
     return {
       onShow(params) {

@@ -28,7 +28,6 @@
       <a href="#/guide" data-nav="guide">Guide</a>
     </nav>
   </div>
-  <div class="tierline" aria-hidden="true"><i></i><i></i><i></i></div>
 </header>
 
 <main id="main">
@@ -36,37 +35,29 @@
 <!-- ============ START ============ -->
 <section class="view" data-view="start" aria-labelledby="h-start">
   <div class="wrap">
-    <div class="hero">
-      <div class="hero-text">
-        <div class="pills"><span class="pill brandpill">GRPS · MTSS</span><span class="pill soft">For school teams</span></div>
-        <h1 id="h-start">The right support. A clear decision. <em>Real follow-through.</em></h1>
-        <p class="lede">Start with what's in front of you. A few quick questions give you a first move, the people to involve, and the right tool.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#/concern"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg> I'm concerned about a scholar</a>
-          <a class="btn ghost" href="#/supports">Find a support</a>
-          <a class="btn ghost" href="#/plan">Build a plan</a>
-        </div>
-        <label class="l" for="q-home">What are you looking for?</label>
+    <div class="home">
+      <div class="ask">
+        <span class="kicker">GRPS · MTSS Field Manual</span>
+        <h1 id="h-start">What's in front of you <span>today?</span></h1>
+        <p class="lede">Pick one. A few quick questions give you a first move, the people to involve, and the right tool.</p>
+        <ol class="answers" aria-label="Where to start">
+          <li><a class="answer" href="#/concern"><span class="n">1</span><span class="t"><b>I'm concerned about a scholar</b><small>Or a small group: academics, attendance, behavior, or SEL</small></span><span class="go" aria-hidden="true">→</span></a></li>
+          <li><a class="answer" href="#/pattern"><span class="n">2</span><span class="t"><b>Many scholars show the same pattern</b><small>A class, grade, course, or subgroup</small></span><span class="go" aria-hidden="true">→</span></a></li>
+          <li><a class="answer" href="#/review"><span class="n">3</span><span class="t"><b>A plan is in place. Is it working?</b><small>Continue, repair, intensify, or fade</small></span><span class="go" aria-hidden="true">→</span></a></li>
+          <li><a class="answer" href="#/meeting"><span class="n">4</span><span class="t"><b>I'm running an MTSS meeting</b><small>The right team, and a decision to leave with</small></span><span class="go" aria-hidden="true">→</span></a></li>
+        </ol>
+        <label class="l" for="q-home">Or search for something specific</label>
         <div class="searchbox">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="q-home" type="search" placeholder="Try “Bridges”, “transportation”, “fidelity”" autocomplete="off">
         </div>
         <div class="hits" id="hits-home" aria-live="polite"></div>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/img/scholar-conversation.jpg" alt="A GRPS educator talking with a scholar" width="1000" height="600">
+      <figure class="home-photo">
+        <img src="assets/img/scholars-reading.jpg" alt="GRPS scholars reading together" width="1000" height="600">
+        <figcaption>Every scholar. <b>The right support.</b></figcaption>
       </figure>
     </div>
-
-    <section class="start-row" aria-labelledby="h-where">
-      <h2 id="h-where">Where should I start?</h2>
-      <div class="tiles">
-            <a class="tile t-sky" href="#/concern"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><b>A scholar I'm concerned about</b><small>Academics · attendance · behavior · SEL</small></a>
-            <a class="tile t-teal" href="#/pattern"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><circle cx="12" cy="15" r="3"/><path d="M2 21c.8-2 2.6-3 5-3M22 21c-.8-2-2.6-3-5-3"/></svg></span><b>Many scholars, same pattern</b><small>Class · grade · course · subgroup</small></a>
-            <a class="tile t-cream" href="#/review"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/><path d="M15 6h4v4"/></svg></span><b>Is the plan working?</b><small>Continue · repair · intensify · fade</small></a>
-            <a class="tile t-plum" href="#/meeting"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 2v4M16 2v4M3 10h18M8 15l2.5 2.5L16 13"/></svg></span><b>I'm running a meeting</b><small>Right team · decision record</small></a>
-      </div>
-    </section>
 
     <section class="band" aria-labelledby="h-straight">
       <h2 id="h-straight">Go straight to</h2>

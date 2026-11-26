@@ -6,17 +6,17 @@
 @font-face{font-family:Inter;src:url(fonts/inter-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
 
 :root{
-  --paper:#ffffff; --sheet:#ffffff; --sand:#f2f6f5; --line:#dfe7e5; --line-2:#c9d6d3;
-  --ink:#14303f; --ink-2:#3d5562; --ink-3:#5f7480;
-  --navy:#0e5552; --navy-deep:#0a403e; --sky:#e9f5f2;
+  --paper:#ffffff; --sheet:#ffffff; --sand:#f2f5f8; --line:#dde5ee; --line-2:#c6d3e0;
+  --ink:#17324d; --ink-2:#3f5469; --ink-3:#5f7184;
+  --navy:#0b3f70; --navy-deep:#082f55; --sky:#eaf3fb;
   --flame:#e0701f; --flame-soft:#fff2e6;
-  --t1:#2f8f6b; --t2:#e5a41b; --t3:#d9572b;
-  --academic:#1f5f8b; --attendance:#e0701f; --behavior:#2f8f6b; --sel:#7a4f8f; --cross:#8a5a14;
-  --good:#2f8f6b; --warn:#9a4a12;
+  --t1:#1f6fb2; --t2:#e5a41b; --t3:#d9572b;
+  --academic:#1f5f8b; --attendance:#e0701f; --behavior:#1f6fb2; --sel:#7a4f8f; --cross:#8a5a14;
+  --good:#1f6fb2; --warn:#9a4a12;
   --serif:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --r:14px; --wrap:1240px; --read:700px;
-  --shadow:0 18px 44px rgba(14,60,58,.14); --shadow2:0 6px 20px rgba(14,60,58,.10);
+  --shadow:0 18px 44px rgba(8,47,85,.14); --shadow2:0 6px 20px rgba(8,47,85,.10);
 }
 *{box-sizing:border-box;min-width:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -182,7 +182,7 @@ label.l{display:block;font-weight:600;margin-bottom:6px;font-size:.95rem}
 .srow h3{font-size:1.12rem;display:flex;align-items:center}
 .srow .meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.86rem;color:var(--ink-3);margin-top:4px;padding-left:16px}
 .tierpill{font:600 .75rem/1 var(--sans);padding:5px 9px;border-radius:999px;background:var(--sand);color:var(--ink-2);white-space:nowrap}
-.tierpill.t1{background:#e4eee9;color:#2d5b45}.tierpill.t2{background:#f7ecd4;color:#7d5410}.tierpill.t3{background:#f6e1d6;color:#8a3f16}
+.tierpill.t1{background:#e6f0fa;color:#174f86}.tierpill.t2{background:#f7ecd4;color:#7d5410}.tierpill.t3{background:#f6e1d6;color:#8a3f16}
 .sdetail{padding:0 4px 22px 20px;display:none}
 .srow.open .sdetail{display:block}
 .srow .chev{transition:transform .15s;color:var(--ink-3)}
